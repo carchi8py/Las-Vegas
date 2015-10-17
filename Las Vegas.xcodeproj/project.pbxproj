@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27B37B1C1BD20B1D0070DFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B1B1BD20B1D0070DFBF /* AppDelegate.swift */; };
+		27B37B1E1BD20B1D0070DFBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B1D1BD20B1D0070DFBF /* ViewController.swift */; };
+		27B37B211BD20B1D0070DFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B37B1F1BD20B1D0070DFBF /* Main.storyboard */; };
+		27B37B231BD20B1D0070DFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B37B221BD20B1D0070DFBF /* Assets.xcassets */; };
+		27B37B261BD20B1D0070DFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B37B241BD20B1D0070DFBF /* LaunchScreen.storyboard */; };
+		27B37B311BD20B1D0070DFBF /* Las_VegasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B301BD20B1D0070DFBF /* Las_VegasTests.swift */; };
+		27B37B3C1BD20B1D0070DFBF /* Las_VegasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B3B1BD20B1D0070DFBF /* Las_VegasUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27B37B2D1BD20B1D0070DFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B37B101BD20B1D0070DFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B37B171BD20B1D0070DFBF;
+			remoteInfo = "Las Vegas";
+		};
+		27B37B381BD20B1D0070DFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B37B101BD20B1D0070DFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B37B171BD20B1D0070DFBF;
+			remoteInfo = "Las Vegas";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27B37B181BD20B1D0070DFBF /* Las Vegas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Las Vegas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B37B1B1BD20B1D0070DFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27B37B1D1BD20B1D0070DFBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27B37B201BD20B1D0070DFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27B37B221BD20B1D0070DFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27B37B251BD20B1D0070DFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27B37B271BD20B1D0070DFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B37B2C1BD20B1D0070DFBF /* Las VegasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Las VegasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B37B301BD20B1D0070DFBF /* Las_VegasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Las_VegasTests.swift; sourceTree = "<group>"; };
+		27B37B321BD20B1D0070DFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B37B371BD20B1D0070DFBF /* Las VegasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Las VegasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B37B3B1BD20B1D0070DFBF /* Las_VegasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Las_VegasUITests.swift; sourceTree = "<group>"; };
+		27B37B3D1BD20B1D0070DFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27B37B151BD20B1D0070DFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B37B291BD20B1D0070DFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B37B341BD20B1D0070DFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27B37B0F1BD20B1D0070DFBF = {
+			isa = PBXGroup;
+			children = (
+				27B37B1A1BD20B1D0070DFBF /* Las Vegas */,
+				27B37B2F1BD20B1D0070DFBF /* Las VegasTests */,
+				27B37B3A1BD20B1D0070DFBF /* Las VegasUITests */,
+				27B37B191BD20B1D0070DFBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27B37B191BD20B1D0070DFBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27B37B181BD20B1D0070DFBF /* Las Vegas.app */,
+				27B37B2C1BD20B1D0070DFBF /* Las VegasTests.xctest */,
+				27B37B371BD20B1D0070DFBF /* Las VegasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B37B1A1BD20B1D0070DFBF /* Las Vegas */ = {
+			isa = PBXGroup;
+			children = (
+				27B37B1B1BD20B1D0070DFBF /* AppDelegate.swift */,
+				27B37B1D1BD20B1D0070DFBF /* ViewController.swift */,
+				27B37B1F1BD20B1D0070DFBF /* Main.storyboard */,
+				27B37B221BD20B1D0070DFBF /* Assets.xcassets */,
+				27B37B241BD20B1D0070DFBF /* LaunchScreen.storyboard */,
+				27B37B271BD20B1D0070DFBF /* Info.plist */,
+			);
+			path = "Las Vegas";
+			sourceTree = "<group>";
+		};
+		27B37B2F1BD20B1D0070DFBF /* Las VegasTests */ = {
+			isa = PBXGroup;
+			children = (
+				27B37B301BD20B1D0070DFBF /* Las_VegasTests.swift */,
+				27B37B321BD20B1D0070DFBF /* Info.plist */,
+			);
+			path = "Las VegasTests";
+			sourceTree = "<group>";
+		};
+		27B37B3A1BD20B1D0070DFBF /* Las VegasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27B37B3B1BD20B1D0070DFBF /* Las_VegasUITests.swift */,
+				27B37B3D1BD20B1D0070DFBF /* Info.plist */,
+			);
+			path = "Las VegasUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27B37B171BD20B1D0070DFBF /* Las Vegas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B37B401BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las Vegas" */;
+			buildPhases = (
+				27B37B141BD20B1D0070DFBF /* Sources */,
+				27B37B151BD20B1D0070DFBF /* Frameworks */,
+				27B37B161BD20B1D0070DFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Las Vegas";
+			productName = "Las Vegas";
+			productReference = 27B37B181BD20B1D0070DFBF /* Las Vegas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27B37B2B1BD20B1D0070DFBF /* Las VegasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B37B431BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las VegasTests" */;
+			buildPhases = (
+				27B37B281BD20B1D0070DFBF /* Sources */,
+				27B37B291BD20B1D0070DFBF /* Frameworks */,
+				27B37B2A1BD20B1D0070DFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B37B2E1BD20B1D0070DFBF /* PBXTargetDependency */,
+			);
+			name = "Las VegasTests";
+			productName = "Las VegasTests";
+			productReference = 27B37B2C1BD20B1D0070DFBF /* Las VegasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27B37B361BD20B1D0070DFBF /* Las VegasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B37B461BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las VegasUITests" */;
+			buildPhases = (
+				27B37B331BD20B1D0070DFBF /* Sources */,
+				27B37B341BD20B1D0070DFBF /* Frameworks */,
+				27B37B351BD20B1D0070DFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B37B391BD20B1D0070DFBF /* PBXTargetDependency */,
+			);
+			name = "Las VegasUITests";
+			productName = "Las VegasUITests";
+			productReference = 27B37B371BD20B1D0070DFBF /* Las VegasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27B37B101BD20B1D0070DFBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Chris Archibald";
+				TargetAttributes = {
+					27B37B171BD20B1D0070DFBF = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					27B37B2B1BD20B1D0070DFBF = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 27B37B171BD20B1D0070DFBF;
+					};
+					27B37B361BD20B1D0070DFBF = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 27B37B171BD20B1D0070DFBF;
+					};
+				};
+			};
+			buildConfigurationList = 27B37B131BD20B1D0070DFBF /* Build configuration list for PBXProject "Las Vegas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27B37B0F1BD20B1D0070DFBF;
+			productRefGroup = 27B37B191BD20B1D0070DFBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27B37B171BD20B1D0070DFBF /* Las Vegas */,
+				27B37B2B1BD20B1D0070DFBF /* Las VegasTests */,
+				27B37B361BD20B1D0070DFBF /* Las VegasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27B37B161BD20B1D0070DFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B37B261BD20B1D0070DFBF /* LaunchScreen.storyboard in Resources */,
+				27B37B231BD20B1D0070DFBF /* Assets.xcassets in Resources */,
+				27B37B211BD20B1D0070DFBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B37B2A1BD20B1D0070DFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B37B351BD20B1D0070DFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27B37B141BD20B1D0070DFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B37B1E1BD20B1D0070DFBF /* ViewController.swift in Sources */,
+				27B37B1C1BD20B1D0070DFBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B37B281BD20B1D0070DFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B37B311BD20B1D0070DFBF /* Las_VegasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B37B331BD20B1D0070DFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B37B3C1BD20B1D0070DFBF /* Las_VegasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27B37B2E1BD20B1D0070DFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B37B171BD20B1D0070DFBF /* Las Vegas */;
+			targetProxy = 27B37B2D1BD20B1D0070DFBF /* PBXContainerItemProxy */;
+		};
+		27B37B391BD20B1D0070DFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B37B171BD20B1D0070DFBF /* Las Vegas */;
+			targetProxy = 27B37B381BD20B1D0070DFBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27B37B1F1BD20B1D0070DFBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B37B201BD20B1D0070DFBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27B37B241BD20B1D0070DFBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B37B251BD20B1D0070DFBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27B37B3E1BD20B1D0070DFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27B37B3F1BD20B1D0070DFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27B37B411BD20B1D0070DFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Las Vegas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ogrebear.Las-Vegas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27B37B421BD20B1D0070DFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Las Vegas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ogrebear.Las-Vegas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27B37B441BD20B1D0070DFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Las VegasTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ogrebear.Las-VegasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Las Vegas.app/Las Vegas";
+			};
+			name = Debug;
+		};
+		27B37B451BD20B1D0070DFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Las VegasTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ogrebear.Las-VegasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Las Vegas.app/Las Vegas";
+			};
+			name = Release;
+		};
+		27B37B471BD20B1D0070DFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Las VegasUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ogrebear.Las-VegasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Las Vegas";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		27B37B481BD20B1D0070DFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Las VegasUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ogrebear.Las-VegasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Las Vegas";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27B37B131BD20B1D0070DFBF /* Build configuration list for PBXProject "Las Vegas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B37B3E1BD20B1D0070DFBF /* Debug */,
+				27B37B3F1BD20B1D0070DFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B37B401BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las Vegas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B37B411BD20B1D0070DFBF /* Debug */,
+				27B37B421BD20B1D0070DFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27B37B431BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las VegasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B37B441BD20B1D0070DFBF /* Debug */,
+				27B37B451BD20B1D0070DFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27B37B461BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las VegasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B37B471BD20B1D0070DFBF /* Debug */,
+				27B37B481BD20B1D0070DFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27B37B101BD20B1D0070DFBF /* Project object */;
+}
