@@ -20,6 +20,9 @@
                                 <rect key="frame" x="270" y="285" width="60" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Push Me"/>
+                                <connections>
+                                    <action selector="pushMePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z00-gp-LWp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

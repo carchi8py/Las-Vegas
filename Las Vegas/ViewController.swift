@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func pushMePressed(sender: AnyObject) {
+        
+        //TODO: Add UIActivityIndicator
+        
+        search()
+    }
+    
+    func search () {
+        
+    }
 
 }
 

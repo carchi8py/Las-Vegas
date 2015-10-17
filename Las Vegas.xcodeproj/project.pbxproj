@@ -14,6 +14,8 @@
 		27B37B261BD20B1D0070DFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B37B241BD20B1D0070DFBF /* LaunchScreen.storyboard */; };
 		27B37B311BD20B1D0070DFBF /* Las_VegasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B301BD20B1D0070DFBF /* Las_VegasTests.swift */; };
 		27B37B3C1BD20B1D0070DFBF /* Las_VegasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B3B1BD20B1D0070DFBF /* Las_VegasUITests.swift */; };
+		27B37B4A1BD20C630070DFBF /* VegasClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B491BD20C630070DFBF /* VegasClient.swift */; settings = {ASSET_TAGS = (); }; };
+		27B37B4C1BD20C9C0070DFBF /* VegasConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B4B1BD20C9C0070DFBF /* VegasConstants.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		27B37B371BD20B1D0070DFBF /* Las VegasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Las VegasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B37B3B1BD20B1D0070DFBF /* Las_VegasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Las_VegasUITests.swift; sourceTree = "<group>"; };
 		27B37B3D1BD20B1D0070DFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B37B491BD20C630070DFBF /* VegasClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegasClient.swift; sourceTree = "<group>"; };
+		27B37B4B1BD20C9C0070DFBF /* VegasConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegasConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				27B37B1B1BD20B1D0070DFBF /* AppDelegate.swift */,
-				27B37B1D1BD20B1D0070DFBF /* ViewController.swift */,
-				27B37B1F1BD20B1D0070DFBF /* Main.storyboard */,
-				27B37B221BD20B1D0070DFBF /* Assets.xcassets */,
-				27B37B241BD20B1D0070DFBF /* LaunchScreen.storyboard */,
-				27B37B271BD20B1D0070DFBF /* Info.plist */,
+				27B37B4E1BD20D020070DFBF /* Controller */,
+				27B37B4D1BD20CEE0070DFBF /* Model */,
+				27B37B4F1BD20D120070DFBF /* Supporting files */,
 			);
 			path = "Las Vegas";
 			sourceTree = "<group>";
@@ -123,6 +125,34 @@
 				27B37B3D1BD20B1D0070DFBF /* Info.plist */,
 			);
 			path = "Las VegasUITests";
+			sourceTree = "<group>";
+		};
+		27B37B4D1BD20CEE0070DFBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27B37B491BD20C630070DFBF /* VegasClient.swift */,
+				27B37B4B1BD20C9C0070DFBF /* VegasConstants.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		27B37B4E1BD20D020070DFBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27B37B1D1BD20B1D0070DFBF /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		27B37B4F1BD20D120070DFBF /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				27B37B271BD20B1D0070DFBF /* Info.plist */,
+				27B37B241BD20B1D0070DFBF /* LaunchScreen.storyboard */,
+				27B37B221BD20B1D0070DFBF /* Assets.xcassets */,
+				27B37B1F1BD20B1D0070DFBF /* Main.storyboard */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +287,8 @@
 			files = (
 				27B37B1E1BD20B1D0070DFBF /* ViewController.swift in Sources */,
 				27B37B1C1BD20B1D0070DFBF /* AppDelegate.swift in Sources */,
+				27B37B4C1BD20C9C0070DFBF /* VegasConstants.swift in Sources */,
+				27B37B4A1BD20C630070DFBF /* VegasClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
