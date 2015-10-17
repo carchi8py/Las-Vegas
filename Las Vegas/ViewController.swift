@@ -29,6 +29,16 @@ class ViewController: UIViewController {
     
     func search () {
         
+        let location = "36.1246126,-115.1720222"
+        
+        VegasClient.sharedInstance().searchFourSquare(location, completionHandler: {
+            success, error in
+            if success {
+                print("It worked")
+            }  else {
+                print("It failed")
+            }
+        })
     }
 
 }

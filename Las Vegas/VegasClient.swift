@@ -17,6 +17,54 @@ class VegasClient: NSObject {
         session = NSURLSession.sharedSession()
     }
     
+    func searchFourSquare(ll: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+        
+        let parameters : [String: AnyObject] = [
+            VegasClient.JSONKeys.ll: ll,
+            VegasClient.JSONKeys.clientID: VegasClient.Constants.fsClientID,
+            VegasClient.JSONKeys.clientSecret: VegasClient.Constants.fsSecret,
+            VegasClient.JSONKeys.fsVersion: VegasClient.Constants.fsVersion
+        ]
+        
+        let task = taskForFourSquareGetMethod(VegasClient.Methods.search, paramters: parameters) {
+            JSONResults, error in
+            if let error = error {
+                print("Something bad happend")
+                completionHandler(success: false, error: error)
+            } else {
+                do {
+                    let jsonData = try NSJSONSerialization.JSONObjectWithData(JSONResults! as! NSData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                    print("\(jsonData)")
+                } catch {
+                    print("Something bad happened")
+                }
+                print("W00t")
+                completionHandler(success: true, error: nil)
+            }
+        }
+        
+
+    }
+    
+    func taskForFourSquareGetMethod(method: String, paramters: [String : AnyObject], completionHandler: (result: AnyObject!, error: NSError?) -> Void) -> NSURLSessionDataTask {
+        let mutableParameters = paramters
+        
+        let urlString = VegasClient.Constants.fsBaseURL + method + VegasClient.escapedParameters(mutableParameters)
+        let url = NSURL(string: urlString)!
+        let request = NSMutableURLRequest(URL: url)
+        
+        let task = session.dataTaskWithRequest(request) { data, response, downloadError in
+            if let error = downloadError {
+                completionHandler(result: nil, error: error)
+            } else {
+                completionHandler(result: data, error: nil)
+            }
+        }
+        task.resume()
+        return task
+    }
+    
+    
     
     /*****  HELPER FUNCTIONS  *****/
     
