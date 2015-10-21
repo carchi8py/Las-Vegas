@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
+@objc(Location)
 
-class Location {
+class Location: NSManagedObject {
+    
     struct Keys {
         // The name of the place
         static let Name = "name"
@@ -26,15 +29,25 @@ class Location {
         static let FSID = "id"
     }
     
-    var name: String
-    var lat: Double
-    var lng: Double
-    var url: String
-    var hereNow: Int
-    var totalCheckins: Int
-    var fsID: Int
+    @NSManaged var name: String
+    @NSManaged var lat: Double
+    @NSManaged var lng: Double
+    @NSManaged var url: String
+    @NSManaged var hereNow: Int
+    @NSManaged var totalCheckins: Int
+    @NSManaged var fsID: Int
     
-    init(dictionary: [String: AnyObject]) {
+    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertIntoManagedObjectContext: context)
+    }
+    
+    init(dictionary: [String: AnyObject], context: NSManagedObjectContext) {
+        
+        //Code Data
+        let entity = NSEntityDescription.entityForName("Location", inManagedObjectContext: context)!
+        super.init(entity: entity, insertIntoManagedObjectContext: context)
+        
+        //dictionary
         name = dictionary[Keys.Name] as! String
         lat = dictionary[Keys.Lat] as! Double
         lng = dictionary[Keys.Lng] as! Double
