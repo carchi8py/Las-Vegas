@@ -50,6 +50,7 @@ class VegasClient: NSObject {
         let mutableParameters = paramters
         
         let urlString = VegasClient.Constants.fsBaseURL + method + VegasClient.escapedParameters(mutableParameters)
+        print(urlString)
         let url = NSURL(string: urlString)!
         let request = NSMutableURLRequest(URL: url)
         

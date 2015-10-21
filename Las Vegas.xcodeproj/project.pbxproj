@@ -110,10 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				27B37B1B1BD20B1D0070DFBF /* AppDelegate.swift */,
+				27E73EB51BD75A0C00787409 /* CoreDataStackManager.swift */,
 				27B37B4E1BD20D020070DFBF /* Controller */,
 				27B37B4D1BD20CEE0070DFBF /* Model */,
 				27B37B4F1BD20D120070DFBF /* Supporting files */,
-				27E73EB51BD75A0C00787409 /* CoreDataStackManager.swift */,
 			);
 			path = "Las Vegas";
 			sourceTree = "<group>";
