@@ -16,6 +16,8 @@
 		27B37B3C1BD20B1D0070DFBF /* Las_VegasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B3B1BD20B1D0070DFBF /* Las_VegasUITests.swift */; };
 		27B37B4A1BD20C630070DFBF /* VegasClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B491BD20C630070DFBF /* VegasClient.swift */; settings = {ASSET_TAGS = (); }; };
 		27B37B4C1BD20C9C0070DFBF /* VegasConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B37B4B1BD20C9C0070DFBF /* VegasConstants.swift */; settings = {ASSET_TAGS = (); }; };
+		27E73EB01BD751DD00787409 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E73EAF1BD751DD00787409 /* TabBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		27E73EB21BD751F000787409 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E73EB11BD751F000787409 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		27B37B3D1BD20B1D0070DFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B37B491BD20C630070DFBF /* VegasClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegasClient.swift; sourceTree = "<group>"; };
 		27B37B4B1BD20C9C0070DFBF /* VegasConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegasConstants.swift; sourceTree = "<group>"; };
+		27E73EAF1BD751DD00787409 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		27E73EB11BD751F000787409 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				27B37B1D1BD20B1D0070DFBF /* ViewController.swift */,
+				27E73EAF1BD751DD00787409 /* TabBarViewController.swift */,
+				27E73EB11BD751F000787409 /* TableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B37B1E1BD20B1D0070DFBF /* ViewController.swift in Sources */,
+				27E73EB21BD751F000787409 /* TableViewController.swift in Sources */,
 				27B37B1C1BD20B1D0070DFBF /* AppDelegate.swift in Sources */,
 				27B37B4C1BD20C9C0070DFBF /* VegasConstants.swift in Sources */,
+				27E73EB01BD751DD00787409 /* TabBarViewController.swift in Sources */,
 				27B37B4A1BD20C630070DFBF /* VegasClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +523,7 @@
 				27B37B421BD20B1D0070DFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B37B431BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las VegasTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +532,7 @@
 				27B37B451BD20B1D0070DFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B37B461BD20B1D0070DFBF /* Build configuration list for PBXNativeTarget "Las VegasUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +541,7 @@
 				27B37B481BD20B1D0070DFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
