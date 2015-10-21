@@ -19,6 +19,8 @@ class TabBarViewController: UITabBarController {
     }
     
     func searchTouched() {
-        print("Search touched")
+        dispatch_async(dispatch_get_main_queue()) {
+            self.performSegueWithIdentifier("toSearchViewController", sender: self)
+        }
     }
 }

@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         //TODO: Add UIActivityIndicator
         
         search()
-        segwayToNavigation()
     }
     
     func search () {
@@ -41,13 +40,5 @@ class ViewController: UIViewController {
             }
         })
     }
-    
-    // If the button is pushed segway to 
-    func segwayToNavigation() {
-        dispatch_async(dispatch_get_main_queue()){
-            self.performSegueWithIdentifier("toNavigationController", sender: self)
-        }
-    }
-
 }
 
