@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="3192" y="247"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Fe7-Cp-KU6">
             <objects>
-                <tabBarController id="4K3-VH-hQj" sceneMemberID="viewController">
+                <tabBarController id="4K3-VH-hQj" customClass="TabBarViewController" customModule="Las_Vegas" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="dcK-uI-0tu"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="lnB-AN-faK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
