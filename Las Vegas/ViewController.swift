@@ -34,7 +34,21 @@ class ViewController: UIViewController {
         VegasClient.sharedInstance().searchFourSquare(location, completionHandler: {
             success, results, error in
             if success {
-                print(results)
+                var results = results as! NSArray
+                var test = results[0]
+                for each in results {
+                    print(each["name"])
+                    var location = each["location"] as! NSDictionary
+                    print(location["lat"])
+                    print(location["lng"])
+                    print(each["url"])
+                    var hereNow = each["hereNow"] as! NSDictionary
+                    print(hereNow["count"])
+                    var stats = each["stats"] as! NSDictionary
+                    print(stats["checkinsCount"])
+                    print(each["id"])
+                    print("---------")
+                }
             }  else {
                 print("It failed")
             }
