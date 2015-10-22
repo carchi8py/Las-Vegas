@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol ViewControllerDelegate {
+    func locationFinder(locationFinder: ViewController, locations: [Location])
+}
 
 class ViewController: UIViewController {
+    
     var locations = [Location]()
+    
+    var delegate: ViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +33,7 @@ class ViewController: UIViewController {
         //TODO: Add UIActivityIndicator
         
         search()
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func search () {
@@ -43,7 +50,16 @@ class ViewController: UIViewController {
                     let location = each["location"] as! NSDictionary
                     let lat = location["lat"] as! Double
                     let lng = location["lng"] as! Double
-                    let url = each["url"] as! String
+                    var url = ""
+                    if let urlValue = each["url"]{
+                        if let x = urlValue {
+                            url = each["url"] as! String
+                        } else {
+                            print("Value is nil")
+                        }
+                    } else {
+                        print("No value")
+                    }
                     let hereNow = each["hereNow"] as! NSDictionary
                     let count = hereNow["count"] as! Int
                     let stats = each["stats"] as! NSDictionary
@@ -51,6 +67,7 @@ class ViewController: UIViewController {
                     let id = each["id"] as! String
                     self.addLocation(name, lat: lat, lng: lng, url: url, count: count, checkins: checkins, id: id)
                 }
+                print("Done")
             }  else {
                 print("It failed")
             }
@@ -66,9 +83,7 @@ class ViewController: UIViewController {
             "hereNow": count,
             "checkinsCount": checkins,
             "id": id]
-        print(locations)
-        print("hi")
+            locations.append(Location(dictionary: newObject))
     }
-    
 }
 
