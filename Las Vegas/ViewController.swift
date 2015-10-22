@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                     let count = hereNow["count"] as! Int
                     let stats = each["stats"] as! NSDictionary
                     let checkins = stats["checkinsCount"] as! Int
-                    let id = each["id"] as! Int
+                    let id = each["id"] as! String
                     self.addLocation(name, lat: lat, lng: lng, url: url, count: count, checkins: checkins, id: id)
                 }
             }  else {
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         })
     }
     
-    func addLocation(name: String, lat: Double, lng: Double, url: String, count: Int, checkins: Int, id: Int) {
+    func addLocation(name: String, lat: Double, lng: Double, url: String, count: Int, checkins: Int, id: String) {
         var newObject : [String: AnyObject] = [
             "name": name,
             "lat": lat,
@@ -66,9 +66,6 @@ class ViewController: UIViewController {
             "hereNow": count,
             "checkinsCount": checkins,
             "id": id]
-        var locations = newObject.map(){
-            Location(dictionary: newObject, context: sharedContext)
-        }
         print(locations)
         print("hi")
     }

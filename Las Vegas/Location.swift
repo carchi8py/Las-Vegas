@@ -32,7 +32,7 @@ class Location {
     var url: String
     var hereNow: Int
     var totalCheckins: Int
-    var fsID: Int
+    var fsID: String
     
     init(dictionary: [String: AnyObject]) {
         
@@ -43,6 +43,6 @@ class Location {
         url = dictionary[Keys.Url] as! String
         hereNow = dictionary[Keys.HereNow] as! Int
         totalCheckins = dictionary[Keys.CheckinsCount] as! Int
-        fsID = dictionary[Keys.FSID] as! Int
+        fsID = dictionary[Keys.FSID] as! String
     }
 }
