@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KNE-dd-kFC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -85,8 +86,25 @@
                     <view key="view" contentMode="scaleToFill" id="7DJ-PG-8Ds">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jvw-1W-rD4">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="apl-XC-adN" id="zcR-wM-rbN"/>
+                                    <outlet property="delegate" destination="apl-XC-adN" id="fNo-OQ-28V"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jvw-1W-rD4" secondAttribute="trailing" constant="-20" id="2XR-af-PI6"/>
+                            <constraint firstItem="xyn-aH-Egi" firstAttribute="top" secondItem="Jvw-1W-rD4" secondAttribute="bottom" id="p4K-dy-C9F"/>
+                            <constraint firstItem="Jvw-1W-rD4" firstAttribute="top" secondItem="h4d-vb-L9X" secondAttribute="bottom" id="rPT-DO-EYp"/>
+                            <constraint firstItem="Jvw-1W-rD4" firstAttribute="leading" secondItem="7DJ-PG-8Ds" secondAttribute="leadingMargin" constant="-20" id="zzX-VS-MAV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" image="List" selectedImage="List" id="K93-tU-SWm"/>
                 </viewController>
