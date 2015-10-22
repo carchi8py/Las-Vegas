@@ -8,13 +8,11 @@
 
 import UIKit
 
-class TableViewController {
+class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var locations = [Location]()
     
-    func locationFinder(locationFinder: ViewController, locations: [Location]) {
-        self.locations = locations
-    }
+    @IBOutlet weak var ourTable: UITableView!
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
@@ -27,6 +25,7 @@ class TableViewController {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        print(locations.count)
         return locations.count
     }
     

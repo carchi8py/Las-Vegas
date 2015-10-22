@@ -68,6 +68,7 @@ class ViewController: UIViewController {
                     self.addLocation(name, lat: lat, lng: lng, url: url, count: count, checkins: checkins, id: id)
                 }
                 print("Done")
+                self.delegate?.locationFinder(self, locations: self.locations)
             }  else {
                 print("It failed")
             }

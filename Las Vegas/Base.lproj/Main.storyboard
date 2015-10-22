@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Las_Vegas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Las_Vegas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -78,7 +78,7 @@
         <!--List-->
         <scene sceneID="pmg-Ei-ZhS">
             <objects>
-                <viewController id="apl-XC-adN" sceneMemberID="viewController">
+                <viewController id="apl-XC-adN" customClass="TableViewController" customModule="Las_Vegas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h4d-vb-L9X"/>
                         <viewControllerLayoutGuide type="bottom" id="xyn-aH-Egi"/>
@@ -107,6 +107,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" image="List" selectedImage="List" id="K93-tU-SWm"/>
+                    <connections>
+                        <outlet property="ourTable" destination="Jvw-1W-rD4" id="xXo-C7-TAI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfm-dp-sdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
