@@ -8,7 +8,9 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
+    var locations = [Location]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,22 +39,39 @@ class ViewController: UIViewController {
                 var results = results as! NSArray
                 var test = results[0]
                 for each in results {
-                    print(each["name"])
-                    var location = each["location"] as! NSDictionary
-                    print(location["lat"])
-                    print(location["lng"])
-                    print(each["url"])
-                    var hereNow = each["hereNow"] as! NSDictionary
-                    print(hereNow["count"])
-                    var stats = each["stats"] as! NSDictionary
-                    print(stats["checkinsCount"])
-                    print(each["id"])
-                    print("---------")
+                    let name = each["name"] as! String
+                    let location = each["location"] as! NSDictionary
+                    let lat = location["lat"] as! Double
+                    let lng = location["lng"] as! Double
+                    let url = each["url"] as! String
+                    let hereNow = each["hereNow"] as! NSDictionary
+                    let count = hereNow["count"] as! Int
+                    let stats = each["stats"] as! NSDictionary
+                    let checkins = stats["checkinsCount"] as! Int
+                    let id = each["id"] as! Int
+                    self.addLocation(name, lat: lat, lng: lng, url: url, count: count, checkins: checkins, id: id)
                 }
             }  else {
                 print("It failed")
             }
         })
     }
+    
+    func addLocation(name: String, lat: Double, lng: Double, url: String, count: Int, checkins: Int, id: Int) {
+        var newObject : [String: AnyObject] = [
+            "name": name,
+            "lat": lat,
+            "lng": lng,
+            "url": url,
+            "hereNow": count,
+            "checkinsCount": checkins,
+            "id": id]
+        var locations = newObject.map(){
+            Location(dictionary: newObject, context: sharedContext)
+        }
+        print(locations)
+        print("hi")
+    }
+    
 }
 

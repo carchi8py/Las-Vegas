@@ -19,7 +19,6 @@
 		27E73EB01BD751DD00787409 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E73EAF1BD751DD00787409 /* TabBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		27E73EB21BD751F000787409 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E73EB11BD751F000787409 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		27E73EB41BD7576B00787409 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E73EB31BD7576B00787409 /* Location.swift */; settings = {ASSET_TAGS = (); }; };
-		27E73EB61BD75A0C00787409 /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E73EB51BD75A0C00787409 /* CoreDataStackManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		27E73EAF1BD751DD00787409 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		27E73EB11BD751F000787409 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		27E73EB31BD7576B00787409 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		27E73EB51BD75A0C00787409 /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				27B37B1B1BD20B1D0070DFBF /* AppDelegate.swift */,
-				27E73EB51BD75A0C00787409 /* CoreDataStackManager.swift */,
 				27B37B4E1BD20D020070DFBF /* Controller */,
 				27B37B4D1BD20CEE0070DFBF /* Model */,
 				27B37B4F1BD20D120070DFBF /* Supporting files */,
@@ -298,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B37B1E1BD20B1D0070DFBF /* ViewController.swift in Sources */,
-				27E73EB61BD75A0C00787409 /* CoreDataStackManager.swift in Sources */,
 				27E73EB21BD751F000787409 /* TableViewController.swift in Sources */,
 				27B37B1C1BD20B1D0070DFBF /* AppDelegate.swift in Sources */,
 				27B37B4C1BD20C9C0070DFBF /* VegasConstants.swift in Sources */,

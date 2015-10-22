@@ -10,13 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Las Vegas/ViewController.swift"
-            timestampString = "467176281.034247"
+            timestampString = "467177567.53171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "search()"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Las_Vegas.ViewController.search (Las_Vegas.ViewController)() -&gt; ()"
+                  moduleName = "Las Vegas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/carchi/code/iOS%20Apps/Las%20Vegas/Las%20Vegas/ViewController.swift"
+                  timestampString = "467177289.997758"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Las_Vegas.ViewController.(search (Las_Vegas.ViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "Las Vegas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/carchi/code/iOS%20Apps/Las%20Vegas/Las%20Vegas/ViewController.swift"
+                  timestampString = "467177289.997917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "5875">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,11 +106,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Las Vegas/ViewController.swift"
-            timestampString = "467176281.034247"
+            timestampString = "467177567.53171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "search()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Las Vegas/ViewController.swift"
+            timestampString = "467177633.831564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "search()"
             landmarkType = "5">
          </BreakpointContent>
