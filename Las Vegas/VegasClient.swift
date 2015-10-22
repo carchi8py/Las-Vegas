@@ -17,7 +17,7 @@ class VegasClient: NSObject {
         session = NSURLSession.sharedSession()
     }
     
-    func searchFourSquare(ll: String, completionHandler: (success: Bool, error: NSError?) -> Void) {
+    func searchFourSquare(ll: String, completionHandler: (success: Bool, array: [[String: AnyObject]]?, error: NSError?) -> Void) {
         
         let parameters : [String: AnyObject] = [
             VegasClient.JSONKeys.ll: ll,
@@ -30,20 +30,26 @@ class VegasClient: NSObject {
             JSONResults, error in
             if let error = error {
                 print("Something bad happend")
-                completionHandler(success: false, error: error)
+                completionHandler(success: false, array: nil, error: error)
+            //Foursquare return what we need in a dictionary -> Dictionary -> Array
+            // The array contain the location we want
             } else {
                 do {
                     let jsonData = try NSJSONSerialization.JSONObjectWithData(JSONResults! as! NSData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-                    print("\(jsonData)")
+                    if let jsonResults = jsonData["response"] as? NSDictionary {
+                        if let venues = jsonResults["venues"] as? [[String:AnyObject]] {
+                            completionHandler(success: true, array: venues, error: nil)
+                        } else {
+                            completionHandler(success: false, array: nil, error: nil)
+                        }
+                    } else {
+                        completionHandler(success: false, array: nil, error: nil)
+                    }
                 } catch {
-                    print("Something bad happened")
+                    completionHandler(success: false, array: nil, error: nil)
                 }
-                print("W00t")
-                completionHandler(success: true, error: nil)
             }
         }
-        
-
     }
     
     func taskForFourSquareGetMethod(method: String, paramters: [String : AnyObject], completionHandler: (result: AnyObject!, error: NSError?) -> Void) -> NSURLSessionDataTask {
